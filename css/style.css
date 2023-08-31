@@ -45,3 +45,30 @@ img {
     bottom: 0px;
     z-index: -1;
 }
+
+#cloud1{
+    width: 40%;
+    right: -100px;
+}
+
+#cloud2{
+    width: 30%;
+    left: -100px;
+    top: -10px;
+    z-index: -1;
+}
+
+button {
+    border-radius: 4px;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 8px;
+    background-color: whitesmoke;
+    color: var(--purple-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    top: 80vh;
+    /* add additional styling later */
+}
