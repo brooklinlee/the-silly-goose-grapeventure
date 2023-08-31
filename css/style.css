@@ -1,0 +1,47 @@
+body {
+    --sky-color: #CDE5E5;
+    --grass-color: #93C808;
+    --yellow-color: #FFDE59;
+    --purple-color: #6500B4;
+    margin: 0;
+    /* padding: 0; */
+    background-color: var(--sky-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    position: absolute;
+}
+
+#logo {
+    width: 60%;
+    top: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#homescreen-goose {
+    width: 40%;
+    bottom: 10px;
+    left: -25px;
+    z-index: 1;
+}
+
+#homescreen-lemonade {
+    width: 25%;
+    bottom: 45px;
+    z-index: 1;
+    right: -10px;
+}
+
+#homescreen-hill {
+    width: 100%;
+    bottom: 0px;
+    z-index: -1;
+}
