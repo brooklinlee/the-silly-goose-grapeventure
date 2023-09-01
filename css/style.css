@@ -1,4 +1,18 @@
-/* body {
+/* .page {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+} */
+
+.hidden{
+    display:none;
+}
+
+
+
+
+body {
     --sky-color: #CDE5E5;
     --grass-color: #93C808;
     --yellow-color: #FFDE59;
@@ -11,7 +25,7 @@
     min-height: 100vh;
     flex-direction: column;
 }
-
+/* 
 img {
     max-width: 100%;
     position: absolute;
