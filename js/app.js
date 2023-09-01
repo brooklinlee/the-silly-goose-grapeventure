@@ -150,6 +150,7 @@ function toPgSeven(){
         page.classList.add('active')
     }
 })
+sillyGooseAudio.playManSaysHey()
 }
 
 function toPgEight(){
