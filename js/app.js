@@ -1,22 +1,15 @@
 // PSEUDO-CODE
 /* 
-// Cached element references of each 'page' in HTML
-// Create an array of the locations of each 'page' (div) in HTML
-
-// Give each page a class of either 'active' or 'hidden'. Hidden classes will be given a CSS property of .hidden{display:none;}.
-
-Use event listeners on each button where 'click' has a function associated with it that will change the class of the targeted div from hidden to active or vice versa as necessary
-
-define a function for each page movement that will change all of the pages elements to hidden, then change the targeted page's class to active
-
 define an init() function that will at page initialization make sure that only page one's class is active and the rest are set to hidden
 
 */
+// Constants
+import * as sillyGooseAudio from "./audio.js"
+
 // Variables
 
 // Cached element references
 
-// Cached element references of each 'page' in HTML
 const pgOne = document.getElementById('pg1')
 const pgTwo = document.getElementById('pg2')
 const pgThree = document.getElementById('pg3')
@@ -28,7 +21,9 @@ const pgEight = document.getElementById('pg8')
 const pgNine = document.getElementById('pg9')
 // console.log(pgNine)
 
-// Cached element references of each button in HTML
+const buttons = document.querySelectorAll('button')
+// console.log(buttons)
+
 const btnOne = document.getElementById('pg-1-opt-1')
 const btnTwo = document.getElementById('pg-2-opt-1')
 const btnThree = document.getElementById('pg-2-opt-2')
@@ -57,6 +52,12 @@ btnNine.addEventListener('click',toPgSix)
 btnTen.addEventListener('click',toPgEight)
 btnElvn.addEventListener('click',toPgNine)
 btnTwlv.addEventListener('click',toPgFive)
+
+buttons.forEach(button => {
+    button.addEventListener('click', sillyGooseAudio.playduckQuack)
+})
+
+// event listener on buttons clicked to play duckQuack audio
 
 
 
