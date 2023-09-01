@@ -45,18 +45,18 @@ const btnTwlv = document.getElementById('pg-9-opt-1')
 
 // Event listeners
 // Use event listeners on each button where 'click' has a function associated with it that will change the class of the targeted div from hidden to active or vice versa as necessary
-btnOne.addEventListener('click',function(){})
-btnTwo.addEventListener('click',function(){})
-btnThree.addEventListener('click',function(){})
-btnFour.addEventListener('click',function(){})
-btnFive.addEventListener('click',function(){})
-btnSix.addEventListener('click',function(){})
-btnSeven.addEventListener('click',function(){})
-btnEight.addEventListener('click',function(){})
-btnNine.addEventListener('click',function(){})
-btnTen.addEventListener('click',function(){})
-btnElvn.addEventListener('click',function(){})
-btnTwlv.addEventListener('click',function(){})
+btnOne.addEventListener('click',toPgTwo)
+btnTwo.addEventListener('click',toPgThree)
+btnThree.addEventListener('click',toPgFive)
+btnFour.addEventListener('click',toPgFour)
+btnFive.addEventListener('click',toPgOne)
+btnSix.addEventListener('click',toPgSix)
+btnSeven.addEventListener('click',toPgSeven)
+btnEight.addEventListener('click',toPgFour)
+btnNine.addEventListener('click',toPgSix)
+btnTen.addEventListener('click',toPgEight)
+btnElvn.addEventListener('click',toPgNine)
+btnTwlv.addEventListener('click',toPgFive)
 
 
 
@@ -64,31 +64,112 @@ btnTwlv.addEventListener('click',function(){})
 
 // Create an array of the locations of each 'page' (div) in HTML
 const pages = [pgOne, pgTwo, pgThree, pgFour, pgFive, pgSix, pgSeven, pgEight, pgNine]
+// console.log(pages[0])
 
-function toPgTwo(){
-    // remove class lists
-    // if page === pgOne
-    // change class list to 'active
-    // else change class list to 'hidden'
-    // Use a terenary? SYNTAX: condition ? expressionIfTrue : expressionIfFalse;
-    // 
+// Functions that change the class of any 'active' pages to 'hidden', and remove the 'hidden' class from the respective page that we are trying to show and adding an 'active' class to that page
+function toPgOne(){
+    pages.forEach(page => {
+    if (page.classList.contains('active')) {
+        page.classList.remove('active')
+        page.classList.add('hidden')
+    } else if (page === pgOne) {
+        page.classList.remove('hidden')
+        page.classList.add('active')
+    }
+})
 }
 
-function toPgOne(){
+function toPgTwo(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgTwo) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
+
+function toPgThree(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgThree) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
+
+function toPgFour(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgFour) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
+
+function toPgFive(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgFive) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
+
+function toPgSix(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgSix) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
+
+function toPgSeven(){
+    pages.forEach( page => {
+    if (page.classList.contains('active')) {
+        page.classList.remove('active')
+        page.classList.add('hidden')
+    } else if (page === pgSeven) {
+        page.classList.remove('hidden')
+        page.classList.add('active')
     }
+})
+}
 
-
-pgOne.classList
-
-
-
-
-
-function toPgThree(){}
-function toPgThree(){}
-function toPgFour(){}
-function toPgFive(){}
-function toPgSix(){}
-function toPgSeven(){}
-function toPgEight(){}
-function toPgNine(){}
+function toPgEight(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgEight) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
+function toPgNine(){
+    pages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.classList.remove('active')
+            page.classList.add('hidden')
+        } else if (page === pgNine) {
+            page.classList.remove('hidden')
+            page.classList.add('active')
+        }
+    })
+}
