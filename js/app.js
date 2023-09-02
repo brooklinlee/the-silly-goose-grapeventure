@@ -5,6 +5,9 @@ define an init() function that will at page initialization make sure that only p
 */
 // Constants
 import * as sillyGooseAudio from "./audio.js"
+import { story } from "./story.js"
+
+// console.log(story.pageTwo[0])
 
 // Variables
 
@@ -90,6 +93,7 @@ function toPgTwo(){
             page.classList.add('active')
         }
     })
+    pgTwo.createElement()
 }
 
 function toPgThree(){
@@ -114,6 +118,7 @@ function toPgFour(){
             page.classList.add('active')
         }
     })
+    sillyGooseAudio.playSadTrombone()
 }
 
 function toPgFive(){
