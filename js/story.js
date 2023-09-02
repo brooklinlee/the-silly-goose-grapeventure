@@ -1,5 +1,4 @@
 const story = {
-    pageOne: ['test element', 'test element two'],
     pageTwo: [`You are a silly goose!`, `It's a warm day out, what do you want to do?`,],
     pageThree: [`You got some breadcrumbs`,`Hooray!`,`But for some reason.../br you can't stop thinking about grapes...`,],
     pageFive: [`You see a lemonade stand!`,],

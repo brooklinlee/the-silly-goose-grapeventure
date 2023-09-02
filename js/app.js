@@ -1,18 +1,10 @@
-// PSEUDO-CODE
-/* 
-define an init() function that will at page initialization make sure that only page one's class is active and the rest are set to hidden
-
-*/
 // Constants
 import * as sillyGooseAudio from "./audio.js"
 import { story } from "./story.js"
 
-// console.log(story.pageTwo[0])
-
 // Variables
 
 // Cached element references
-
 const pgOne = document.getElementById('pg1')
 const pgTwo = document.getElementById('pg2')
 const pgThree = document.getElementById('pg3')
@@ -22,10 +14,8 @@ const pgSix = document.getElementById('pg6')
 const pgSeven = document.getElementById('pg7')
 const pgEight = document.getElementById('pg8')
 const pgNine = document.getElementById('pg9')
-// console.log(pgNine)
 
 const buttons = document.querySelectorAll('button')
-// console.log(buttons)
 
 const btnOne = document.getElementById('pg-1-opt-1')
 const btnTwo = document.getElementById('pg-2-opt-1')
@@ -39,10 +29,8 @@ const btnNine = document.getElementById('pg-7-opt-1')
 const btnTen = document.getElementById('pg-7-opt-2')
 const btnElvn = document.getElementById('pg-8-opt-1')
 const btnTwlv = document.getElementById('pg-9-opt-1')
-// console.log(btnTwlv)
 
 // Event listeners
-// Use event listeners on each button where 'click' has a function associated with it that will change the class of the targeted div from hidden to active or vice versa as necessary
 btnOne.addEventListener('click', () => {toNewPage(pgTwo)})
 btnTwo.addEventListener('click',() => {toNewPage(pgThree)})
 btnThree.addEventListener('click',() => {toNewPage(pgFive)}) 
@@ -56,28 +44,48 @@ btnTen.addEventListener('click',() => {toNewPage(pgEight)})
 btnElvn.addEventListener('click',() => {toNewPage(pgNine)}) 
 btnTwlv.addEventListener('click',() => {toNewPage(pgFive)}) 
 
-buttons.forEach(button => {
-    button.addEventListener('click', sillyGooseAudio.playduckQuack)
-})
 
 // Functions
-
-// Create an array of the locations of each 'page' (div) in HTML
 const pages = [pgOne, pgTwo, pgThree, pgFour, pgFive, pgSix, pgSeven, pgEight, pgNine]
-// console.log(pages[0])
 
-// Change this to DRY code, rewrite these so that there are parameters to replace and condence all of these individual functions to one function
-function toNewPage(parameter) {
+buttons.forEach(button => {
+button.addEventListener('click', sillyGooseAudio.playduckQuack)
+})
+
+function toNewPage(location) {
     pages.forEach(page => {
         if(page.classList.contains('active')) {
             page.classList.remove('active')
             page.classList.add('hidden')
-        } else if (page === parameter) {
+        } else if (page === location) {
             page.classList.remove('hidden')
             page.classList.add('active')
         }
     })
 }
+
+function addStoryParagraph(storyText, idName, location) {
+    const newParagraph = document.createElement('p')
+    newParagraph.innerText = storyText
+    newParagraph.setAttribute('class', 'story-paragraph')
+    newParagraph.setAttribute('id', idName)
+    location.append(newParagraph)
+}
+
+addStoryParagraph(story.pageTwo[0], 'pg-two-txt-1', pgTwo)
+addStoryParagraph(story.pageTwo[1], 'pg-two-txt-2', pgTwo)
+addStoryParagraph(story.pageThree[0], 'pg-three-txt-1', pgThree)
+addStoryParagraph(story.pageThree[1], 'pg-three-txt-2', pgThree)
+addStoryParagraph(story.pageThree[2], 'pg-three-txt-3', pgThree)
+addStoryParagraph(story.pageFive[0], 'pg-five-txt-1', pgFive)
+addStoryParagraph(story.pageSix[0], 'pg-six-txt-1', pgSix)
+addStoryParagraph(story.pageSix[1], 'pg-six-txt-2', pgSix)
+addStoryParagraph(story.pageSeven[0], 'pg-seven-txt-1', pgSeven)
+addStoryParagraph(story.pageSeven[1], 'pg-seven-txt-2', pgSeven)
+addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', pgSeven)
+addStoryParagraph(story.pageEight[0], 'pg-eight-txt-1', pgEight)
+addStoryParagraph(story.pageEight[1], 'pg-eight-txt-2', pgEight)
+
 
 // function toPgOne(){
 //     pages.forEach(page => {
@@ -92,22 +100,9 @@ function toNewPage(parameter) {
 // }
 
 
-
-// functions to add storyline to div of each page, add an id element to each 
-function addStoryParagraph(storyText, idName, location) {
-    const newParagraph = document.createElement('p')
-    newParagraph.innerText = storyText
-    newParagraph.setAttribute('class', 'story-paragraph')
-    newParagraph.setAttribute('id', idName)
-    location.append(newParagraph)
-}
-
-addStoryParagraph(story.pageOne[0], 'page-one-text', pgOne)
-
+// add a timed entry function? for some of the story elements?
 // const newParagraph = document.createElement('p')
 // newParagraph.innerText = story.pageOne[0]
 // newParagraph.setAttribute('class', 'story-paragraph')
 // newParagraph.setAttribute('id', 'page-one-text-1')
 // pgOne.append(newParagraph)
-
-// add a timed entry function? for some of the story elements?
