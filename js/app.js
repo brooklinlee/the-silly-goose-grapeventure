@@ -43,26 +43,22 @@ const btnTwlv = document.getElementById('pg-9-opt-1')
 
 // Event listeners
 // Use event listeners on each button where 'click' has a function associated with it that will change the class of the targeted div from hidden to active or vice versa as necessary
-btnOne.addEventListener('click',toPgTwo)
-btnTwo.addEventListener('click',toPgThree)
-btnThree.addEventListener('click',toPgFive)
-btnFour.addEventListener('click',toPgFour)
-btnFive.addEventListener('click',toPgOne)
-btnSix.addEventListener('click',toPgSix)
-btnSeven.addEventListener('click',toPgSeven)
-btnEight.addEventListener('click',toPgFour)
-btnNine.addEventListener('click',toPgSix)
-btnTen.addEventListener('click',toPgEight)
-btnElvn.addEventListener('click',toPgNine)
-btnTwlv.addEventListener('click',toPgFive)
+btnOne.addEventListener('click', () => {toNewPage(pgTwo)})
+btnTwo.addEventListener('click',() => {toNewPage(pgThree)})
+btnThree.addEventListener('click',() => {toNewPage(pgFive)}) 
+btnFour.addEventListener('click',() => {toNewPage(pgFour)}) 
+btnFive.addEventListener('click',() => {toNewPage(pgOne)}) 
+btnSix.addEventListener('click',() => {toNewPage(pgSix)}) 
+btnSeven.addEventListener('click',() => {toNewPage(pgSeven)}) 
+btnEight.addEventListener('click',() => {toNewPage(pgFour)}) 
+btnNine.addEventListener('click',() => {toNewPage(pgSix)}) 
+btnTen.addEventListener('click',() => {toNewPage(pgEight)}) 
+btnElvn.addEventListener('click',() => {toNewPage(pgNine)}) 
+btnTwlv.addEventListener('click',() => {toNewPage(pgFive)}) 
 
 buttons.forEach(button => {
     button.addEventListener('click', sillyGooseAudio.playduckQuack)
 })
-
-// event listener on buttons clicked to play duckQuack audio
-
-
 
 // Functions
 
@@ -70,113 +66,48 @@ buttons.forEach(button => {
 const pages = [pgOne, pgTwo, pgThree, pgFour, pgFive, pgSix, pgSeven, pgEight, pgNine]
 // console.log(pages[0])
 
-// Functions that change the class of any 'active' pages to 'hidden', and remove the 'hidden' class from the respective page that we are trying to show and adding an 'active' class to that page
-function toPgOne(){
+// Change this to DRY code, rewrite these so that there are parameters to replace and condence all of these individual functions to one function
+function toNewPage(parameter) {
     pages.forEach(page => {
-    if (page.classList.contains('active')) {
-        page.classList.remove('active')
-        page.classList.add('hidden')
-    } else if (page === pgOne) {
-        page.classList.remove('hidden')
-        page.classList.add('active')
-    }
-})
-}
-
-function toPgTwo(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
+        if(page.classList.contains('active')) {
             page.classList.remove('active')
             page.classList.add('hidden')
-        } else if (page === pgTwo) {
-            page.classList.remove('hidden')
-            page.classList.add('active')
-        }
-    })
-    pgTwo.createElement()
-}
-
-function toPgThree(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
-            page.classList.remove('active')
-            page.classList.add('hidden')
-        } else if (page === pgThree) {
+        } else if (page === parameter) {
             page.classList.remove('hidden')
             page.classList.add('active')
         }
     })
 }
 
-function toPgFour(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
-            page.classList.remove('active')
-            page.classList.add('hidden')
-        } else if (page === pgFour) {
-            page.classList.remove('hidden')
-            page.classList.add('active')
-        }
-    })
-    sillyGooseAudio.playSadTrombone()
+// function toPgOne(){
+//     pages.forEach(page => {
+//     if (page.classList.contains('active')) {
+//         page.classList.remove('active')
+//         page.classList.add('hidden')
+//     } else if (page === pgOne) {
+//         page.classList.remove('hidden')
+//         page.classList.add('active')
+//     }
+// })
+// }
+
+
+
+// functions to add storyline to div of each page, add an id element to each 
+function addStoryParagraph(storyText, idName, location) {
+    const newParagraph = document.createElement('p')
+    newParagraph.innerText = storyText
+    newParagraph.setAttribute('class', 'story-paragraph')
+    newParagraph.setAttribute('id', idName)
+    location.append(newParagraph)
 }
 
-function toPgFive(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
-            page.classList.remove('active')
-            page.classList.add('hidden')
-        } else if (page === pgFive) {
-            page.classList.remove('hidden')
-            page.classList.add('active')
-        }
-    })
-}
+addStoryParagraph(story.pageOne[0], 'page-one-text', pgOne)
 
-function toPgSix(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
-            page.classList.remove('active')
-            page.classList.add('hidden')
-        } else if (page === pgSix) {
-            page.classList.remove('hidden')
-            page.classList.add('active')
-        }
-    })
-}
+// const newParagraph = document.createElement('p')
+// newParagraph.innerText = story.pageOne[0]
+// newParagraph.setAttribute('class', 'story-paragraph')
+// newParagraph.setAttribute('id', 'page-one-text-1')
+// pgOne.append(newParagraph)
 
-function toPgSeven(){
-    pages.forEach( page => {
-    if (page.classList.contains('active')) {
-        page.classList.remove('active')
-        page.classList.add('hidden')
-    } else if (page === pgSeven) {
-        page.classList.remove('hidden')
-        page.classList.add('active')
-    }
-})
-sillyGooseAudio.playManSaysHey()
-}
-
-function toPgEight(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
-            page.classList.remove('active')
-            page.classList.add('hidden')
-        } else if (page === pgEight) {
-            page.classList.remove('hidden')
-            page.classList.add('active')
-        }
-    })
-}
-function toPgNine(){
-    pages.forEach(page => {
-        if (page.classList.contains('active')) {
-            page.classList.remove('active')
-            page.classList.add('hidden')
-        } else if (page === pgNine) {
-            page.classList.remove('hidden')
-            page.classList.add('active')
-        }
-    })
-}
+// add a timed entry function? for some of the story elements?
