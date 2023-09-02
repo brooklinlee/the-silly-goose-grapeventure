@@ -34,16 +34,15 @@ const btnTwlv = document.getElementById('pg-9-opt-1')
 btnOne.addEventListener('click', () => {toNewPage(pgTwo)})
 btnTwo.addEventListener('click',() => {toNewPage(pgThree)})
 btnThree.addEventListener('click',() => {toNewPage(pgFive)}) 
-btnFour.addEventListener('click',() => {toNewPage(pgFour)}) 
+btnFour.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())}) 
 btnFive.addEventListener('click',() => {toNewPage(pgOne)}) 
 btnSix.addEventListener('click',() => {toNewPage(pgSix)}) 
-btnSeven.addEventListener('click',() => {toNewPage(pgSeven)}) 
-btnEight.addEventListener('click',() => {toNewPage(pgFour)}) 
+btnSeven.addEventListener('click',() => {toNewPage(pgSeven, sillyGooseAudio.playManSaysHey())}) 
+btnEight.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())}) 
 btnNine.addEventListener('click',() => {toNewPage(pgSix)}) 
 btnTen.addEventListener('click',() => {toNewPage(pgEight)}) 
-btnElvn.addEventListener('click',() => {toNewPage(pgNine)}) 
+btnElvn.addEventListener('click',() => {toNewPage(pgNine, sillyGooseAudio.playElevatorMusic())}) 
 btnTwlv.addEventListener('click',() => {toNewPage(pgFive)}) 
-
 
 // Functions
 const pages = [pgOne, pgTwo, pgThree, pgFour, pgFive, pgSix, pgSeven, pgEight, pgNine]
@@ -52,7 +51,8 @@ buttons.forEach(button => {
 button.addEventListener('click', sillyGooseAudio.playduckQuack)
 })
 
-function toNewPage(location) {
+
+function toNewPage(location, sound) {
     pages.forEach(page => {
         if(page.classList.contains('active')) {
             page.classList.remove('active')
@@ -62,6 +62,7 @@ function toNewPage(location) {
             page.classList.add('active')
         }
     })
+    sound
 }
 
 function addStoryParagraph(storyText, idName, location) {
@@ -86,23 +87,4 @@ addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', pgSeven)
 addStoryParagraph(story.pageEight[0], 'pg-eight-txt-1', pgEight)
 addStoryParagraph(story.pageEight[1], 'pg-eight-txt-2', pgEight)
 
-
-// function toPgOne(){
-//     pages.forEach(page => {
-//     if (page.classList.contains('active')) {
-//         page.classList.remove('active')
-//         page.classList.add('hidden')
-//     } else if (page === pgOne) {
-//         page.classList.remove('hidden')
-//         page.classList.add('active')
-//     }
-// })
-// }
-
-
 // add a timed entry function? for some of the story elements?
-// const newParagraph = document.createElement('p')
-// newParagraph.innerText = story.pageOne[0]
-// newParagraph.setAttribute('class', 'story-paragraph')
-// newParagraph.setAttribute('id', 'page-one-text-1')
-// pgOne.append(newParagraph)
