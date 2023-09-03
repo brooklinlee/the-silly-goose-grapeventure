@@ -67,7 +67,7 @@ function toNewPage(location, sound) {
 
 function addStoryParagraph(storyText, idName, location) {
     const newParagraph = document.createElement('p')
-    newParagraph.innerText = storyText
+    newParagraph.innerHTML = storyText
     newParagraph.setAttribute('class', 'story-paragraph')
     newParagraph.setAttribute('id', idName)
     location.append(newParagraph)
