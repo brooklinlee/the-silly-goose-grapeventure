@@ -1,16 +1,6 @@
-/* .page {
-    display: none;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
-} */
-
 .hidden{
     display:none;
 }
-
-
-
 
 body {
     --sky-color: #CDE5E5;
@@ -19,18 +9,24 @@ body {
     --purple-color: #6500B4;
     margin: 0;
     background-color: var(--sky-color);
-    position: relative;
     overflow: hidden;
-    display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    position: relative;
 }
-/* 
-img {
+
+div {
+    position: relative;
+}
+
+img, button {
     max-width: 100%;
     position: absolute;
 }
-
+.arrow {
+    color: black;
+    padding-top: 20px;
+} 
+/* page 1 */
 #logo {
     width: 60%;
     top: 4vh;
@@ -39,38 +35,54 @@ img {
     z-index: 2;
 }
 
-#homescreen-goose {
-    width: 40%;
-    bottom: 10px;
-    left: -25px;
-    z-index: 1;
-}
-
-#homescreen-lemonade {
-    width: 25%;
-    bottom: 25px;
-    z-index: 1;
-    right: -10px;
-}
-
-#homescreen-hill {
+#pg-one-hill {
+    position: fixed;
     width: 100%;
-    bottom: 0px;
-    z-index: -1;
+    bottom: 0;
 }
 
-#cloud1{
+#pg-one-goose {
+    position: fixed;
     width: 40%;
-    right: -100px;
+    bottom: 20px;
+    left: -35px;
 }
 
-#cloud2{
+#pg-one-lemonade {
+    position: fixed;
+    width: 25%;
+    right: -20px;
+    bottom: 40px;
+    
+}
+
+#pg-one-cloud-one {
     width: 30%;
-    left: -100px;
+    right: -60px;
+}
+
+#pg-one-cloud-two {
+    width: 35%;
+    left: -60px;
     top: -10px;
     z-index: -1;
 }
 
+#pg-1-opt-1 {
+    border-radius: 30px;
+    border: 3.5px solid black;
+    width: fit-content;
+    padding: 10px 6px 10px 10px;
+    background-color: white;
+    color: var(--purple-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    top: 80vh;
+}
+
+/* 
 button {
     border-radius: 20px;
     border: 3.5px solid black;
@@ -85,8 +97,3 @@ button {
     z-index: 3;
     top: 80vh;
 }
-
-.arrow {
-    color: black;
-    font-weight: bolder;
-} */
