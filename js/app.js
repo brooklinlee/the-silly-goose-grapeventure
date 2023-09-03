@@ -40,9 +40,9 @@ btnSix.addEventListener('click',() => {toNewPage(pgSix)})
 btnSeven.addEventListener('click',() => {toNewPage(pgSeven, sillyGooseAudio.playManSaysHey())}) 
 btnEight.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())}) 
 btnNine.addEventListener('click',() => {toNewPage(pgSix)}) 
-btnTen.addEventListener('click',() => {toNewPage(pgEight)}) 
-btnElvn.addEventListener('click',() => {toNewPage(pgNine, sillyGooseAudio.playElevatorMusic())}) 
-btnTwlv.addEventListener('click',() => {toNewPage(pgFive)}) 
+btnTen.addEventListener('click',() => {toNewPage(pgEight, sillyGooseAudio.playElevatorMusic())}) 
+btnElvn.addEventListener('click',() => {toNewPage(pgFive)}) 
+
 
 // Functions
 const pages = [pgOne, pgTwo, pgThree, pgFour, pgFive, pgSix, pgSeven, pgEight, pgNine]
@@ -77,7 +77,6 @@ addStoryParagraph(story.pageTwo[0], 'pg-two-txt-1', pgTwo)
 addStoryParagraph(story.pageTwo[1], 'pg-two-txt-2', pgTwo)
 addStoryParagraph(story.pageThree[0], 'pg-three-txt-1', pgThree)
 addStoryParagraph(story.pageThree[1], 'pg-three-txt-2', pgThree)
-addStoryParagraph(story.pageThree[2], 'pg-three-txt-3', pgThree)
 addStoryParagraph(story.pageFive[0], 'pg-five-txt-1', pgFive)
 addStoryParagraph(story.pageSix[0], 'pg-six-txt-1', pgSix)
 addStoryParagraph(story.pageSix[1], 'pg-six-txt-2', pgSix)

@@ -142,19 +142,133 @@ button {
     border-radius: 4px;
 }
 
+.button-section {
+    position: fixed;
+    width: 100%;
+    /* border: 1px solid blue; */
+    height: 100px;
+    bottom: 0px;
+}
+
 #pg-2-opt-1 {
-    position: absolute;
+    /* position: absolute; */
     left: 20%;
-    z-index: 3;
-    top: 80vh;
+    
 }
 
 #pg-2-opt-2 {
-    position: absolute;
+    /* position: absolute; */
     right: 20%;
-    z-index: 3;
-    top: 80vh;
+    
 }
+
+/* page 3 */
+#pg-3-background {
+    /* border: 1px solid black; */
+    min-width: 100%;
+    z-index: 0;
+
+}
+
+#pg-three-txt-1 {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+#pg-three-txt-2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    color: white;
+    background-color: var(--purple-color);
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+#pg-3-goose {
+    width: 30%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#pg-3-opt-1 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* pg 4 */
+#endscreen {
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+#pg-4-opt-1 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* pg 5 */
+#pg-5-background {
+    /* background-image: url(assets/Images/lemonade_stand_and_hill.png); */
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -2;
+}
+
+#pg-5-goose {
+    z-index: -1;
+    transform: scalex(-1);
+    bottom: -30px;
+    left: -50;
+}
+
+#pg-5-opt-1 {
+    left: 20px;
+}
+
+#pg-5-opt-2 {
+    right: 20px;
+}
+/* pg 6 */
+#pg-6-goose {
+
+}
+#pg-6-opt-1{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* pg 7 */
+#pg-7-lemonade {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
+    width: 70%;
+}
+#pg-7-opt-1 {
+    left: 20px;
+}
+
+#pg-7-opt-2 {
+    right: 20px;
+}
+/* pg 8 */
+#pg-8-hill{
+    width: 100%;
+    z-index: -1;
+}
+
+#pg-8-opt-1 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* 
 button {

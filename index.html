@@ -8,7 +8,7 @@
     <title>The Silly Goose Grape-Venture</title>
 </head>
 <body>
-    <div class="active" id="pg1">
+    <div class="hidden" id="pg1">
         <button id="pg-1-opt-1">waddle on <span class="arrow">▷</span></button>
         <img src="assets/Images/logo.png" alt="The Silly Goose Grape-Venture Logo" id="logo">
         <img src="assets/Images/grass_hills.png" alt="grassy hill" id="pg-one-hill">
@@ -18,36 +18,54 @@
         <img src="assets/Images/cloud_2.png" alt="white cloud" id="pg-one-cloud-two">
     </div>
     <div class="hidden" id="pg2">
-        <button id="pg-2-opt-1">go to the lake<span class="arrow">▷</span></button>
-        <button id="pg-2-opt-2">waddle up the road<span class="arrow">▷</span></button>
         <img src="assets/Images/goose_standing.png" alt="goose with bowtie" id = "pg-two-goose">
         <img src="assets/Images/lake.png" alt="lake" id="pg-two-lake">
         <img src="assets/Images/road.png" alt="road" id="pg-two-road">
-        <!-- <img src="assets/Images/lemonade_stand.png" alt="lemonade stand" id="pg-two-lemonade"> -->
+        <section class="button-section">
+            <button id="pg-2-opt-1">go to the lake<span class="arrow">▷</span></button>
+            <button id="pg-2-opt-2">waddle up the road<span class="arrow">▷</span></button>
+        </section>
     </div>
     <div class="hidden" id="pg3">
-        <button id="pg-3-opt-1">continue to end</button>
+        <img src="assets/Images/lake_background.png" alt="lake" id="pg-3-background">
+        <img src="assets/Images/goose_sitting.png" alt="swimming goose" id="pg-3-goose">
+        <section class="button-section">
+            <button id="pg-3-opt-1">continue to end<span class="arrow">▷</span></button>
+        </section>
     </div>
     <div class="hidden" id="pg4">
-        <button id="pg-4-opt-1">restart?</button>
+        <img src="assets/Images/endscreen.png" alt="game over with grapes background" id="endscreen">
+        <section class="button-section">
+            <button id="pg-4-opt-1">restart?<span class="arrow">▷</span></button>
+        </section>
     </div>
     <div class="hidden" id="pg5">
-        <button id="pg-5-opt-1">can I have lemonade?</button>
-        <button id="pg-5-opt-2">do you have any grapes?</button>
+        <section class="button-section">
+            <button id="pg-5-opt-1">can I have lemonade?<span class="arrow">▷</span></button>
+            <button id="pg-5-opt-2">do you have any grapes?<span class="arrow">▷</span></button></section>
+        <img src="assets/Images/goose_sitting.png" alt="goose sitting" id="pg-5-goose">
+        <img src="assets/Images/lemonade_stand_and_hill.png" alt="lemonade stand" id="pg-5-background">
     </div>
     <div class="hidden" id="pg6">
-        <button id="pg-6-opt-1">lemonade isn't for you</button>
+        <section class="button-section">
+            <button id="pg-6-opt-1">continue<span class="arrow">▷</span></button>
+        </section>
+        <img src="assets/Images/goose_face.png" alt="goose face" id="pg-6-goose">
     </div>
     <div class="hidden" id="pg7">
-        <button id="pg-7-opt-1">take lemonade</button>
-        <button id="pg-7-opt-2">hmm... no thanks</button>
+        <section class="button-section">
+            <button id="pg-7-opt-1">take lemonade<span class="arrow">▷</span></button>
+            <button id="pg-7-opt-2">hmmm... no thanks<span class="arrow">▷</span></button>
+        </section>
+        <img src="assets/Images/lemonade_stand.png" alt="lemonade stand" id="pg-7-lemonade">
     </div>
-    <div class="hidden" id="pg8">
-        <button id="pg-8-opt-1">I'll pass</button>
+    <div class="active" id="pg8">
+        <section class="button-section">
+            <button id="pg-8-opt-1">continue<span class="arrow">▷</span></button>
+        </section>
+        <img src="assets/Images/grass_hills.png" alt="grass hill" id="pg-8-hill">
     </div>
-    <div class="hidden" id="pg9">
-        <button id="pg-9-opt-1">till the very next day</button>
-    </div> 
+    
         <!-- <img src="assets/TSGG-Logo.png" alt="The Silly Goose Grape-Venture logo" id="logo">
         <img src="assets/TSGG Goose with Glasses.png" alt="goose with sunglasses" id="homescreen-goose">
         <img src="assets/TSGG Lemonade Stand.png" alt="man in lemonade stand" id="homescreen-lemonade">
