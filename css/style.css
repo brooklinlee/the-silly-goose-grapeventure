@@ -227,7 +227,6 @@ button {
 }
 #pg-5-goose {
     z-index: -1;
-    transform: scalex(-1);
     bottom: -30px;
     left: -50;
 }

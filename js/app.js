@@ -34,13 +34,18 @@ const btnTwlv = document.getElementById('pg-9-opt-1')
 btnOne.addEventListener('click', () => {toNewPage(pgTwo)})
 btnTwo.addEventListener('click',() => {toNewPage(pgThree)})
 btnThree.addEventListener('click',() => {toNewPage(pgFive)}) 
-btnFour.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())}) 
+btnFour.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())})
+btnFour.addEventListener('click', () => {addAnimation(document.getElementById('game-over-goose'), 'animate__animated animate__zoomIn')}) 
 btnFive.addEventListener('click',() => {toNewPage(pgOne)}) 
-btnSix.addEventListener('click',() => {toNewPage(pgSix)}) 
+btnFive.addEventListener('click', () => {addAnimation(document.getElementById('pg-5-goose'), 'animate__animated animate__slideInLeft')}) 
+btnSix.addEventListener('click',() => {toNewPage(pgSix)})
+btnSix.addEventListener('click', () => {addAnimation(document.getElementById('pg-5-goose'), 'animate__animated animate__slideInLeft')}) 
 btnSeven.addEventListener('click',() => {toNewPage(pgSeven, sillyGooseAudio.playManSaysHey())}) 
 btnEight.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())}) 
 btnNine.addEventListener('click',() => {toNewPage(pgSix)}) 
 btnTen.addEventListener('click',() => {toNewPage(pgEight, sillyGooseAudio.playElevatorMusic())}) 
+btnTen.addEventListener('click', () => {addAnimation(document.getElementById('goose-butt'), 'animate__animated animate__slideInLeft')}) 
+btnTen.addEventListener('click', () => {addAnimation(document.getElementById('waddle'), 'animate__animated animate__swing')}) 
 btnElvn.addEventListener('click',() => {toNewPage(pgFive)}) 
 
 
@@ -63,6 +68,12 @@ function toNewPage(location, sound) {
         }
     })
     sound
+
+}
+
+function addAnimation(location, className){
+    // add animation to a given element
+    location.setAttribute('class', className)
 }
 
 function addStoryParagraph(storyText, idName, location) {
@@ -72,7 +83,6 @@ function addStoryParagraph(storyText, idName, location) {
     newParagraph.setAttribute('id', idName)
     location.append(newParagraph)
 }
-
 
 
 addStoryParagraph(story.pageTwo[0], 'pg-two-txt-1', document.getElementById('text-box-2'))
