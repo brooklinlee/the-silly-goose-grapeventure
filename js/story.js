@@ -1,5 +1,5 @@
 const story = {
-    pageTwo: ["Life is good as a <strong>silly goose</strong>... <br>&nbsp &nbsp &nbsp &nbsp and it's a beautiful day out!", "What do you want <strong>to do?</strong>",],
+    pageTwo: ["Life is good as a silly goose... <br>&nbsp &nbsp &nbsp &nbsp and it's a beautiful day out!", "What do you want to do?",],
     pageThree: [`You got some <strong>bread crumbs</strong>! Hooray!`,`But for some reason, <strong> you can't stop thinking about grapes...</strong>`,],
     pageFive: [`You see a lemonade stand!`,],
     pageSix:[`Lemonade isn't for you, br/ you silly goose!`,`Too bad he doesn't have any grapes...`,],

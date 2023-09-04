@@ -73,17 +73,19 @@ function addStoryParagraph(storyText, idName, location) {
     location.append(newParagraph)
 }
 
-addStoryParagraph(story.pageTwo[0], 'pg-two-txt-1', pgTwo)
-addStoryParagraph(story.pageTwo[1], 'pg-two-txt-2', pgTwo)
-addStoryParagraph(story.pageThree[0], 'pg-three-txt-1', pgThree)
-addStoryParagraph(story.pageThree[1], 'pg-three-txt-2', pgThree)
-addStoryParagraph(story.pageFive[0], 'pg-five-txt-1', pgFive)
-addStoryParagraph(story.pageSix[0], 'pg-six-txt-1', pgSix)
-addStoryParagraph(story.pageSix[1], 'pg-six-txt-2', pgSix)
-addStoryParagraph(story.pageSeven[0], 'pg-seven-txt-1', pgSeven)
-addStoryParagraph(story.pageSeven[1], 'pg-seven-txt-2', pgSeven)
-addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', pgSeven)
-addStoryParagraph(story.pageEight[0], 'pg-eight-txt-1', pgEight)
-addStoryParagraph(story.pageEight[1], 'pg-eight-txt-2', pgEight)
+
+
+addStoryParagraph(story.pageTwo[0], 'pg-two-txt-1', document.getElementById('text-box-2'))
+addStoryParagraph(story.pageTwo[1], 'pg-two-txt-2', document.getElementById('text-box-2-lower'))
+addStoryParagraph(story.pageThree[0], 'pg-three-txt-1', document.getElementById('text-box-3'))
+addStoryParagraph(story.pageThree[1], 'pg-three-txt-2', document.getElementById('text-box-3-lower'))
+addStoryParagraph(story.pageFive[0], 'pg-five-txt-1', document.getElementById('text-box-5'))
+addStoryParagraph(story.pageSix[0], 'pg-six-txt-1', document.getElementById('text-box-6'))
+addStoryParagraph(story.pageSix[1], 'pg-six-txt-2', document.getElementById('text-box-6'))
+addStoryParagraph(story.pageSeven[0], 'pg-seven-txt-1', document.getElementById('text-box-7'))
+addStoryParagraph(story.pageSeven[1], 'pg-seven-txt-2', document.getElementById('text-box-7'))
+addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', document.getElementById('text-box-7'))
+addStoryParagraph(story.pageEight[0], 'pg-eight-txt-1', document.getElementById('text-box-8'))
+addStoryParagraph(story.pageEight[1], 'pg-eight-txt-2', document.getElementById('text-box-8'))
 
 // add a timed entry function? for some of the story elements?

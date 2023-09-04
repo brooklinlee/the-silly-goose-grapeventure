@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
     <script defer src="./js/app.js" type="module"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>The Silly Goose Grape-Venture</title>
 </head>
 <body>
-    <div class="hidden" id="pg1">
-        <button id="pg-1-opt-1">waddle on <span class="arrow">▷</span></button>
-        <img src="assets/Images/logo.png" alt="The Silly Goose Grape-Venture Logo" id="logo">
+    <div class="active" id="pg1">
+        <section class="button-section">
+        </section>
+        <button id="pg-1-opt-1">waddle on <span class="arrow">></span></button>
+        <section class="image-section"></section>
+        <img src="assets/Images/logo.png" alt="The Silly Goose Grape-Venture Logo" id="logo" >
         <img src="assets/Images/grass_hills.png" alt="grassy hill" id="pg-one-hill">
-        <img src="assets/Images/goose_full_sunglasses.png" alt="goose with sunglasses" id="pg-one-goose">
-        <img src="assets/Images/lemonade_stand.png" alt="lemonade stand" id="pg-one-lemonade">
+        <img src="assets/Images/goose_full_sunglasses.png" alt="goose with sunglasses" class="animate__animated animate__bounceInLeft" id="pg-one-goose">
+        <img src="assets/Images/lemonade_stand.png" alt="lemonade stand" id="pg-one-lemonade" class="animate__animated animate__bounceInDown">
         <img src="assets/Images/cloud_1.png" alt="white cloud" id="pg-one-cloud-one">
         <img src="assets/Images/cloud_2.png" alt="white cloud" id="pg-one-cloud-two">
     </div>
     <div class="hidden" id="pg2">
-        <img src="assets/Images/goose_standing.png" alt="goose with bowtie" id = "pg-two-goose">
-        <img src="assets/Images/lake.png" alt="lake" id="pg-two-lake">
-        <img src="assets/Images/road.png" alt="road" id="pg-two-road">
         <section class="button-section">
-            <button id="pg-2-opt-1">go to the lake<span class="arrow">▷</span></button>
+            <button id="pg-2-opt-1">go to the lake<span class="arrow"> ></span></button>
             <button id="pg-2-opt-2">waddle up the road<span class="arrow">▷</span></button>
+        </section>
+        <section class="top-box" id="text-box-2"></section>
+        <section class="bottom-box" id="text-box-2-lower"></section>
+        <section class="image-section">
+            </section><img src="assets/Images/goose_standing.png" alt="goose with bowtie" lass="animate__animated animate__slideInLeft" id = "pg-two-goose">
+            <img src="assets/Images/road.png" alt="road" id="pg-two-road">
+            <img src="assets/Images/lake.png" alt="lake" id="pg-two-lake">
         </section>
     </div>
     <div class="hidden" id="pg3">
+        <section class="top-box" id="text-box-3"></section>
+        <section class="bottom-box" id="text-box-3-lower"></section>
+        <section class="text-box" id="text-box-3"></section>
         <img src="assets/Images/lake_background.png" alt="lake" id="pg-3-background">
         <img src="assets/Images/goose_sitting.png" alt="swimming goose" id="pg-3-goose">
         <section class="button-section">
@@ -34,12 +53,14 @@
         </section>
     </div>
     <div class="hidden" id="pg4">
+        <section class="text-box" id="text-box-4"></section>
         <img src="assets/Images/endscreen.png" alt="game over with grapes background" id="endscreen">
         <section class="button-section">
             <button id="pg-4-opt-1">restart?<span class="arrow">▷</span></button>
         </section>
     </div>
     <div class="hidden" id="pg5">
+        <section class="text-box" id="text-box-5"></section>
         <section class="button-section">
             <button id="pg-5-opt-1">can I have lemonade?<span class="arrow">▷</span></button>
             <button id="pg-5-opt-2">do you have any grapes?<span class="arrow">▷</span></button></section>
@@ -47,31 +68,26 @@
         <img src="assets/Images/lemonade_stand_and_hill.png" alt="lemonade stand" id="pg-5-background">
     </div>
     <div class="hidden" id="pg6">
+        <section class="text-box" id="text-box-6"></section>
         <section class="button-section">
             <button id="pg-6-opt-1">continue<span class="arrow">▷</span></button>
         </section>
         <img src="assets/Images/goose_face.png" alt="goose face" id="pg-6-goose">
     </div>
     <div class="hidden" id="pg7">
+        <section class="text-box" id="text-box-7"></section>
         <section class="button-section">
             <button id="pg-7-opt-1">take lemonade<span class="arrow">▷</span></button>
             <button id="pg-7-opt-2">hmmm... no thanks<span class="arrow">▷</span></button>
         </section>
         <img src="assets/Images/lemonade_stand.png" alt="lemonade stand" id="pg-7-lemonade">
     </div>
-    <div class="active" id="pg8">
+    <div class="hidden" id="pg8">
+        <section class="text-box" id="text-box-8"></section>
         <section class="button-section">
             <button id="pg-8-opt-1">continue<span class="arrow">▷</span></button>
         </section>
         <img src="assets/Images/grass_hills.png" alt="grass hill" id="pg-8-hill">
     </div>
-    
-        <!-- <img src="assets/TSGG-Logo.png" alt="The Silly Goose Grape-Venture logo" id="logo">
-        <img src="assets/TSGG Goose with Glasses.png" alt="goose with sunglasses" id="homescreen-goose">
-        <img src="assets/TSGG Lemonade Stand.png" alt="man in lemonade stand" id="homescreen-lemonade">
-        <img src="assets/TSGG Grass.png" alt="grassy hills" id="homescreen-hill">
-        <img src="assets/TSGG-Cloud1.png" alt="white cloud" id="cloud1">
-        <img src="assets/TSGG-Cloud2.png" alt="white cloud" id="cloud2">
-        <button id="start-button">waddle on <span class = arrow>></span></button> -->
 </body>
 </html>
