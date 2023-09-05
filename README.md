@@ -13,6 +13,10 @@ The Silly Goose Grape-Venture is a Choose Your Own Adventure game based on the o
 - git
 
 ## Credits
+
+### Inspiration
+This choose your own adventure game is inspired by The Duck Song by forrestfire101 on YouTube. You can watch it yourself here (https://youtu.be/MtN1YnoL46Q?si=cItbawBQU-IUd2Ge).
+
 ### Audio Credits:
 I got these audio files from freesound.org 
 - https://freesound.org/people/crazyduckman/sounds/185549/
@@ -29,10 +33,13 @@ All images are sourced from Canva.com. The logo I created myself, and I sourced 
 - Lemonade Stand ys by Olesia_g
 - Man is by jemastock
 
+### Animation Credits:
+All animations are downloaded from https://animate.style/
+
 ## Ice Box
- - [] Adding an additional story loop option that appears after you have been through the 'Do you have any grapes' loop three times that unlocks going to the store with the lemonade stand owner and asking him if they sell lemonade there (inspired by The Duck Song)
- - [] Update design to be more repsonsive and look good on multiple sizes of screens
- - [] Add more animations to make the story feel more "alive"
+ - [ ] Adding an additional story loop option that appears after you have been through the 'Do you have any grapes' loop three times that unlocks going to the store with the lemonade stand owner and asking him if they sell lemonade there (inspired by The Duck Song)
+ - [ ] Update design to be more repsonsive and look good on multiple sizes of screens
+ - [ ] Add more animations to make the story feel more "alive"
 
 
 
