@@ -9,6 +9,7 @@ body {
     overflow: hidden;
     min-height: 100vh;
     position: relative;
+    font-size: 100%;
 
 }
 div {
@@ -22,13 +23,14 @@ img, button {
 button {
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bolder;
-    font-size: 3vh;
+    font-size: 100%;
     border-radius: 30px;
     border: 3.5px solid black;
-    width: fit-content;
+    width: 25%;
     padding: 8px 10px 10px 10px;
     background-color: white;
     color: var(--purple-color);
+    text-align: center;
 }
 .hidden{
     display:none;
@@ -48,7 +50,7 @@ button {
 .top-box {
     position: fixed;
     width: 100%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     height: 100px;
     top: 100px;
     z-index: 2;
@@ -56,7 +58,7 @@ button {
 .bottom-box {
     position: fixed;
     width: 100%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     height: 100px;
     top: 200px;
     z-index: 2;
@@ -137,11 +139,11 @@ button {
     min-height: 100vh;
 }
 #pg-two-goose {
-    position: fixed;
+    /* position: fixed; */
     width: 35%;
     left: 50%;
     transform: translateX(-50%);
-    top: 40px;
+    bottom: 20%;
     z-index: 1;
 }
 #pg-two-lake {
@@ -154,15 +156,15 @@ button {
 #pg-two-road {
     position: fixed;
     width: 50%;
-    bottom: -5px;
-    right: 10px;
+    bottom: -5%;
+    right: -1%;
 }
 #pg-two-txt-1 {
-    left: 10%;
+    left: 5%;
     
 }
 #pg-two-txt-2 {
-    right: 10%;
+    right: 5%;
 }
 #pg-2-opt-1 {
     /* position: absolute; */
@@ -182,17 +184,20 @@ button {
 
 }
 #pg-three-txt-1 {
-    left: 10%;
+    text-align: center;
+    left: 5%;
 }
 #pg-three-txt-2 {
-    right: 10%;
+    right: 5%;
+    text-align: center;
     color: white;
     background-color: var(--purple-color);
     
 }
 #pg-3-goose {
+    position: fixed;
     width: 30%;
-    top: 20px;
+    bottom: 25%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -225,9 +230,16 @@ button {
     min-height: 100vh;
     z-index: -2;
 }
+#pg-5-lemonade {
+    /* position: fixed; */
+    width: 60%;
+    right: 0%;
+    bottom: -15%;
+}
 #pg-5-goose {
+    width: 50%;
     z-index: -1;
-    bottom: -30px;
+    bottom: -10%;
     left: -50;
 }
 #text-box-5 {
@@ -256,16 +268,20 @@ button {
     right: 10%;
     color: white;
     background-color: var(--purple-color);
+    font-size: 4vh;
 }
 /* pg 7 */
 #pg-seven-txt-1 {
-    left: 10px;
+    text-align: center;
+    left: 5%;
 }
 #pg-seven-txt-2 {
-    left: 60px;
+    text-align: center;
+    right: 5%;
 }
 #pg-seven-txt-3 {
-    right: 100px;
+    text-align: center;
+    left: 5%;
 }
 #pg-7-lemonade {
     position: fixed;
@@ -288,12 +304,13 @@ button {
 }
 #goose-butt {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     right: 10px;
     bottom: 10px;
 }
 #waddle {
     width: 40%;
+    z-index: 1;
 }
 #pg-eight-txt-1 {
     left: 20px;

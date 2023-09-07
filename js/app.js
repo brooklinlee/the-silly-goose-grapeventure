@@ -39,10 +39,12 @@ btnFour.addEventListener('click', () => {addAnimation(document.getElementById('g
 btnFive.addEventListener('click',() => {toNewPage(pgOne)}) 
 btnFive.addEventListener('click', () => {addAnimation(document.getElementById('pg-5-goose'), 'animate__animated animate__slideInLeft')}) 
 btnSix.addEventListener('click',() => {toNewPage(pgSix)})
-btnSix.addEventListener('click', () => {addAnimation(document.getElementById('pg-5-goose'), 'animate__animated animate__slideInLeft')}) 
+btnSix.addEventListener('click', () => {addAnimation(document.getElementById('pg-6-goose'), 'animate__animated animate__pulse')}) 
 btnSeven.addEventListener('click',() => {toNewPage(pgSeven, sillyGooseAudio.playManSaysHey())}) 
 btnEight.addEventListener('click',() => {toNewPage(pgFour, sillyGooseAudio.playSadTrombone())}) 
+btnEight.addEventListener('click', () => {addAnimation(document.getElementById('game-over-goose'), 'animate__animated animate__zoomIn')}) 
 btnNine.addEventListener('click',() => {toNewPage(pgSix)}) 
+btnNine.addEventListener('click', () => {addAnimation(document.getElementById('pg-6-goose'), 'animate__animated animate__pulse')}) 
 btnTen.addEventListener('click',() => {toNewPage(pgEight, sillyGooseAudio.playElevatorMusic())}) 
 btnTen.addEventListener('click', () => {addAnimation(document.getElementById('goose-butt'), 'animate__animated animate__slideInLeft')}) 
 btnTen.addEventListener('click', () => {addAnimation(document.getElementById('waddle'), 'animate__animated animate__swing')}) 
@@ -72,7 +74,6 @@ function toNewPage(location, sound) {
 }
 
 function addAnimation(location, className){
-    // add animation to a given element
     location.setAttribute('class', className)
 }
 
@@ -93,9 +94,8 @@ addStoryParagraph(story.pageFive[0], 'pg-five-txt-1', document.getElementById('t
 addStoryParagraph(story.pageSix[0], 'pg-six-txt-1', document.getElementById('text-box-6-top'))
 addStoryParagraph(story.pageSix[1], 'pg-six-txt-2', document.getElementById('text-box-6-lower'))
 addStoryParagraph(story.pageSeven[0], 'pg-seven-txt-1', document.getElementById('text-box-7-top'))
-addStoryParagraph(story.pageSeven[1], 'pg-seven-txt-2', document.getElementById('text-box-7'))
-addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', document.getElementById('text-box-7-lower'))
+addStoryParagraph(story.pageSeven[1], 'pg-seven-txt-2', document.getElementById('text-box-7-lower'))
+addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', document.getElementById('text-box-7'))
 addStoryParagraph(story.pageEight[0], 'pg-eight-txt-1', document.getElementById('text-box-8-lower'))
 addStoryParagraph(story.pageEight[1], 'pg-eight-txt-2', document.getElementById('text-box-8'))
 
-// add a timed entry function? for some of the story elements?
