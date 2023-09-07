@@ -18,7 +18,6 @@ div {
 img, button {
     max-width: 100%;
     position: absolute;
-    
 }
 button {
     font-family: 'Gloria Hallelujah', cursive;
@@ -74,7 +73,6 @@ button {
 .button-section {
     position: fixed;
     width: 100%;
-    /* border: 1px solid blue; */
     height: 100px;
     bottom: 0px;
     z-index: 5;
@@ -83,26 +81,22 @@ button {
     color: black;
     padding-top: 20px;
 } 
-/* page 1 */
 #logo {
     width: 60%;
     top: 4vh;
     z-index: 2;
 }
-
 #pg-one-hill {
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-
 #pg-one-goose {
     position: fixed;
     width: 40%;
     bottom: 20px;
     left: -35px;
 }
-
 #pg-one-lemonade {
     position: fixed;
     width: 25%;
@@ -110,19 +104,16 @@ button {
     bottom: 40px;
     
 }
-
 #pg-one-cloud-one {
     width: 30%;
     right: -60px;
 }
-
 #pg-one-cloud-two {
     width: 35%;
     left: -60px;
     top: -10px;
     z-index: -1;
 }
-
 #pg-1-opt-1 {
     position: absolute;
     left: 50%;
@@ -130,13 +121,11 @@ button {
     z-index: 3;
     top: 80vh;
 }
-/* page two */
 #pg2 {
     background-color: var(--grass-color);
     min-height: 100vh;
 }
 #pg-two-goose {
-    /* position: fixed; */
     width: 35%;
     left: 50%;
     transform: translateX(-50%);
@@ -164,21 +153,15 @@ button {
     right: 5%;
 }
 #pg-2-opt-1 {
-    /* position: absolute; */
     left: 20%;
     
 }
 #pg-2-opt-2 {
-    /* position: absolute; */
     right: 20%;
-    
 }
-/* page 3 */
 #pg-3-background {
-    /* border: 1px solid black; */
     min-width: 100%;
     z-index: 0;
-
 }
 #pg-three-txt-1 {
     text-align: center;
@@ -202,7 +185,6 @@ button {
     left: 50%;
     transform: translateX(-50%);
 }
-/* pg 4 */
 #endscreen {
     position: relative;
     min-width: 100%;
@@ -219,16 +201,13 @@ button {
     left: 50%;
     transform: translateX(-50%);
 }
-/* pg 5 */
 #pg-5-background {
-    /* background-image: url(assets/Images/lemonade_stand_and_hill.png); */
     position: relative;
     min-width: 100%;
     min-height: 100vh;
     z-index: -2;
 }
 #pg-5-lemonade {
-    /* position: fixed; */
     width: 60%;
     right: 0%;
     bottom: -15%;
@@ -252,7 +231,6 @@ button {
 #pg-5-opt-2 {
     right: 20%;
 }
-/* pg 6 */
 #pg-6-goose {
     position: fixed;
     height: 90vh;
@@ -267,7 +245,6 @@ button {
     background-color: var(--purple-color);
     font-size: 4vh;
 }
-/* pg 7 */
 #pg-seven-txt-1 {
     text-align: center;
     left: 5%;
@@ -292,7 +269,6 @@ button {
 #pg-7-opt-2 {
     right: 20%;
 }
-/* pg 8 */
 #pg-8-hill{
     position: fixed;
     width: 100%;

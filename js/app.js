@@ -1,10 +1,6 @@
-// Constants
 import * as sillyGooseAudio from "./audio.js"
 import { story } from "./story.js"
 
-// Variables
-
-// Cached element references
 const pgOne = document.getElementById('pg1')
 const pgTwo = document.getElementById('pg2')
 const pgThree = document.getElementById('pg3')
@@ -30,7 +26,6 @@ const btnTen = document.getElementById('pg-7-opt-2')
 const btnElvn = document.getElementById('pg-8-opt-1')
 const btnTwlv = document.getElementById('pg-9-opt-1')
 
-// Event listeners
 btnOne.addEventListener('click', () => {toNewPage(pgTwo)})
 btnTwo.addEventListener('click',() => {toNewPage(pgThree)})
 btnThree.addEventListener('click',() => {toNewPage(pgFive)}) 
@@ -50,14 +45,11 @@ btnTen.addEventListener('click', () => {addAnimation(document.getElementById('go
 btnTen.addEventListener('click', () => {addAnimation(document.getElementById('waddle'), 'animate__animated animate__swing')}) 
 btnElvn.addEventListener('click',() => {toNewPage(pgFive)}) 
 
-
-// Functions
 const pages = [pgOne, pgTwo, pgThree, pgFour, pgFive, pgSix, pgSeven, pgEight, pgNine]
 
 buttons.forEach(button => {
 button.addEventListener('click', sillyGooseAudio.playduckQuack)
 })
-
 
 function toNewPage(location, sound) {
     pages.forEach(page => {
@@ -70,7 +62,6 @@ function toNewPage(location, sound) {
         }
     })
     sound
-
 }
 
 function addAnimation(location, className){
@@ -85,7 +76,6 @@ function addStoryParagraph(storyText, idName, location) {
     location.append(newParagraph)
 }
 
-
 addStoryParagraph(story.pageTwo[0], 'pg-two-txt-1', document.getElementById('text-box-2'))
 addStoryParagraph(story.pageTwo[1], 'pg-two-txt-2', document.getElementById('text-box-2-lower'))
 addStoryParagraph(story.pageThree[0], 'pg-three-txt-1', document.getElementById('text-box-3'))
@@ -98,4 +88,3 @@ addStoryParagraph(story.pageSeven[1], 'pg-seven-txt-2', document.getElementById(
 addStoryParagraph(story.pageSeven[2], 'pg-seven-txt-3', document.getElementById('text-box-7'))
 addStoryParagraph(story.pageEight[0], 'pg-eight-txt-1', document.getElementById('text-box-8-lower'))
 addStoryParagraph(story.pageEight[1], 'pg-eight-txt-2', document.getElementById('text-box-8'))
-
