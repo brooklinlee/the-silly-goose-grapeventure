@@ -42,7 +42,6 @@ button {
 .text-box {
     position: fixed;
     width: 100%;
-    /* border: 1px solid blue; */
     height: 100px;
     bottom: 100px;
     z-index: 2;
@@ -50,7 +49,6 @@ button {
 .top-box {
     position: fixed;
     width: 100%;
-    border: 1px solid blue;
     height: 100px;
     top: 100px;
     z-index: 2;
@@ -58,7 +56,6 @@ button {
 .bottom-box {
     position: fixed;
     width: 100%;
-    border: 1px solid blue;
     height: 100px;
     top: 200px;
     z-index: 2;
