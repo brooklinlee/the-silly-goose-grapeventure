@@ -7,12 +7,12 @@ body {
     margin: 0;
     background-color: var(--sky-color);
     overflow: hidden;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     font-size: 100%;
 }
 p {
-    font-size: 3vh;
+    font-size: 1.5em;
 }
 div {
     position: relative;
@@ -24,10 +24,10 @@ img, button {
 button {
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bolder;
-    font-size: 3vh;
+    font-size: 1.5em;
     border-radius: 30px;
     border: 3.5px solid black;
-    width: 20%;
+    width: 22%;
     padding: 8px 10px 10px 10px;
     background-color: white;
     color: var(--purple-color);
@@ -86,7 +86,7 @@ button {
 } 
 #logo {
     width: 60%;
-    top: 4vh;
+    top: 40px;
     z-index: 2;
 }
 #pg-one-hill {
@@ -118,12 +118,10 @@ button {
 }
 #pg2 {
     background-color: var(--grass-color);
-    min-height: 100vh;
+    height: 100vh;
 }
 #pg-two-goose {
     width: 35%;
-    left: 50%;
-    transform: translateX(-50%);
     bottom: 20%;
     z-index: 1;
 }
@@ -180,23 +178,19 @@ button {
 #endscreen {
     position: relative;
     min-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     z-index: 0;
 }
 #game-over-goose {
-    left: 50%;
-    transform: translateX(-50%);
     width: 80%;
-    z-index: 1;
-}
-#pg-4-opt-1 {
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 #pg-5-background {
     position: relative;
     min-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     z-index: -2;
 }
 #pg-5-lemonade {
@@ -225,17 +219,18 @@ button {
 }
 #pg-6-goose {
     position: fixed;
-    height: 90vh;
+    height: 90%;
     bottom: 0px;
+    
 }
 #pg-six-txt-1 {
-    right: 10%
+    right: 5%
 }
 #pg-six-txt-2 {
-    right: 10%;
+    right: 5%;
     color: white;
     background-color: var(--purple-color);
-    font-size: 4vh;
+    font-size: 2em;
 }
 #pg-seven-txt-1 {
     text-align: center;
